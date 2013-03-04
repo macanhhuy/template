@@ -1,0 +1,100 @@
+/*
+Your custom styles.
+*/
+
+#style-switcher {
+  position: fixed;
+  top: 30%;
+  left: 0;
+  background: #fff;
+  border: 1px solid #AAA;
+  border-width: 1px 1px 1px 0;
+  webkit-box-shadow: 0 1px 5px rgba(0,0,0,.2);
+  -moz-box-shadow: 0 1px 5px rgba(0,0,0,.2);
+  box-shadow: 0 1px 5px rgba(0, 0, 0, .2);
+  padding: 5px 8px;
+  z-index: 99999;
+  color: #999;
+  text-transform: uppercase;
+  font-size: 11px;
+  font-family: Arial, Helvetica, sans-serif;
+
+  -ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=50)";
+  filter: alpha(opacity=75);
+  opacity: 0.75;
+  -moz-opacity: 0.75;
+
+}
+
+#style-switcher:hover {
+  -ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=50)";
+  filter: alpha(opacity=100);
+  opacity: 1;
+  -moz-opacity: 1;
+}
+#style-switcher .title {
+  border-bottom: 1px solid #eee;
+  padding: 0 0 2px;
+  margin-bottom: 4px;
+}
+#style-switcher .lists {
+  line-height: 20px;
+}
+#style-switcher .lists img {
+  margin-right: 4px;
+}
+#style-switcher .clse {
+  float: right;
+}
+#style-switcher .actions {
+  position: relative;
+}
+#style-switcher .opn,
+#style-switcher .clse {
+  font-size: 18px;
+  text-transform: none;
+  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+  cursor: pointer;
+  color: #5BB75B;
+ }
+ #style-switcher .opn,
+ #style-switcher.collapsed .skins,
+ #style-switcher.collapsed .clse {
+  display: none;
+ }
+ #style-switcher .clse,
+ #style-switcher.collapsed .opn {
+  display: inline;
+ }
+
+#style-switcher a {
+  text-transform: uppercase;
+  font-size: 11px;
+  font-family: Arial, Helvetica, sans-serif;
+  display: block;
+}
+#style-switcher a:first-child {
+  border-left: 0;
+  padding-left: 0;
+}
+#style-switcher a:hover {
+  color: #EC3237;
+  text-decoration: none;
+}
+
+.footnote {
+  text-transform: none;
+  width: 120px;
+  line-height: 11px;
+  padding: 6px 0;
+  display: none;
+}
+
+@media only screen and (max-width: 767px) {
+
+  #style-switcher { top:12%; }
+  
+}
+#logo-white {
+  display: none;
+}
